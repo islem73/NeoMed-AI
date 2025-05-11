@@ -9,7 +9,7 @@ def text_to_speech_with_gtts_old(text,output_filepath):
     audioobj.save(output_filepath)
 
 text='Hello, I am the voice of the NEoMed AI. How can I help you?'
-#text_to_speech_with_gtts_old(text=text, output_filepath='output.mp3')
+text_to_speech_with_gtts_old(text=text, output_filepath='output.mp3')
 
 #Step1a: Setup Text to Speech-TTS-model with ElevenLabs
 import elevenlabs
@@ -34,8 +34,6 @@ def text_to_speech_with_elevenlabs_old(text,output_filepath):
 #Stp2: Use Model for Text to voice
 import subprocess
 import platform
-
-
 
 def text_to_speech_with_gtts (text,output_filepath):
     language = 'en'
@@ -70,20 +68,11 @@ def text_to_speech_with_elevenlabs(text,output_filepath):
         model="eleven_turbo_v2"
     )
     elevenlabs.save(audio,output_filepath)
-    os_name = platform.system()
 
-    try:
-        if os_name == 'Windows':
-            subprocess.call(['start', output_filepath], shell=True)
-        elif os_name == 'Darwin':  # macOS
-            subprocess.call(['open', output_filepath])
-        elif os_name == 'Linux':
-            subprocess.call(['xdg-open', output_filepath])
-        else:
-            print("Unsupported OS")
+    return output_filepath 
 
-    except Exception as e:
-        print(f"Error playing audio: {e}")
 
-text_to_speech_with_elevenlabs(text,output_filepath="output_elevenlabs_newversion.mp3")
+
+
+#text_to_speech_with_elevenlabs(text,output_filepath="output_elevenlabs_newversion.mp3")
 

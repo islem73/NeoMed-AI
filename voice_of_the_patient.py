@@ -38,24 +38,25 @@ def record_audio(file_path , timeout=20, phrase_time_limit=None):
 
 
 audio_filepath="patient_voice_test.mp3"
-record_audio(file_path=audio_filepath)
+#record_audio(file_path=audio_filepath)
 
 #Step2: Record Speech to text_model for transcription
 import os 
 from groq import Groq
 from dotenv import load_dotenv
 
-
 load_dotenv()
 GROQ_API_KEY=os.environ.get("GROQ_API_KEY")
-client = Groq(api_key=GROQ_API_KEY)
 stt_model="whisper-large-v3"
-audio_file=open(audio_filepath, "rb")
 
-transcript = client.audio.transcriptions.create(
-    model=stt_model,
-    file=audio_file,
-    language="en",
-)
+def transcribe_audio(stt_model, audio_filepath,GROQ_API_KEY):
 
-print(transcript.text)
+    client = Groq(api_key=GROQ_API_KEY)
+    audio_file=open(audio_filepath, "rb")
+    transcript = client.audio.transcriptions.create(
+        model=stt_model,
+        file=audio_file,
+        language="en",
+    )
+
+    return transcript.text
