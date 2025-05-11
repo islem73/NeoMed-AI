@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ebd3536358add054ef3352179140ce0e25c2ab4ad09ff23c1e465d4ff24c5b2d"
+            "sha256": "9e232d8c49557da3952e980f73db865611feac00a86ed7af8fc4e9600b430edf"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -209,6 +209,15 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==1.3.1"
+        },
+        "speechrecognition": {
+            "hashes": [
+                "sha256:2daa467f0b5686017ff3f9a64dcfa1a789ee10d1b0ada3be74bfad10eaef5f49",
+                "sha256:42940b95295b358fdd7415daa01260c8b20025d6b4000fbbaa3458f005d912b7"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.9'",
+            "version": "==3.14.2"
         },
         "typing-extensions": {
             "hashes": [
