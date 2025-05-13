@@ -58,7 +58,6 @@ def text_to_speech_with_gtts (text,output_filepath):
 text='Hello, I am the voice of the NEoMed AI. How can I help you?'
 #text_to_speech_with_gtts(text=text, output_filepath='output_newversion.mp3')
 
-
 def text_to_speech_with_elevenlabs(text,output_filepath):
     client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
     audio = client.generate(

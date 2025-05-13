@@ -1,21 +1,21 @@
-# Byte-compiled / cache
+# Cache & compiled files
 __pycache__/
 *.py[cod]
 
-# Environment variables
+# Environment config
 .env
 
 # Gradio and other temp folders
 .gradio/
 
-# Media/output files
+# Media/output
 *.mp3
 *.jpg
 
-# Virtualenvs (if any)
+# Virtual environments
 venv/
 env/
 
-# OS files
+# OS-specific
 .DS_Store
 Thumbs.db

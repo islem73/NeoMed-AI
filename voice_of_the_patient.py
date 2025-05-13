@@ -40,6 +40,7 @@ def record_audio(file_path , timeout=20, phrase_time_limit=None):
 audio_filepath="patient_voice_test.mp3"
 #record_audio(file_path=audio_filepath)
 
+
 #Step2: Record Speech to text_model for transcription
 import os 
 from groq import Groq

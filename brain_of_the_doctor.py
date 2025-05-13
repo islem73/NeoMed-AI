@@ -21,6 +21,7 @@ def encode_image(image_path):
 from groq import Groq
 
 query ="Is there something wrong with my skin? I have a pimple on my face. Can you help me with that?"
+
 model="meta-llama/llama-4-scout-17b-16e-instruct"
 
 def analyze_image_with_query(query,model,encoded_image):
