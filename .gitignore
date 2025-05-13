@@ -1,25 +1,21 @@
-# Ignore environment variable file
-.env
-
-# Ignore Python bytecode
+# Byte-compiled / cache
 __pycache__/
 *.py[cod]
 
-# Ignore Pipenv lock file (optional — if you want reproducible builds, you can keep it)
-Pipfile.lock
+# Environment variables
+.env
 
-# Ignore virtual environments (in case it's created locally)
-.venv/
+# Gradio and other temp folders
+.gradio/
+
+# Media/output files
+*.mp3
+*.jpg
+
+# Virtualenvs (if any)
 venv/
+env/
 
-# Ignore local image files (if acne.jpg is not meant to be versioned)
-acne.jpg
-
-# OS-specific files
+# OS files
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Editor-specific folders
-.vscode/
-.idea/
