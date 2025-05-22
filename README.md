@@ -1,4 +1,4 @@
-﻿# 🩺 NeoMedAito — AI Medical Chatbot with Vision & Voice
+﻿# 🩺 NeoMedAI — AI Medical Chatbot with Vision & Voice
 
 **NeoMedAito** is a next-generation AI-powered **medical chatbot** that integrates both **vision** and **voice** to deliver an immersive, intelligent, and personalized healthcare assistant experience. Built using cutting-edge open-source technologies, this project showcases the real potential of **multimodal generative AI** in the field of digital health.
 
