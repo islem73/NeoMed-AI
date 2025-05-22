@@ -15,7 +15,7 @@ This project is a complete, in-depth tutorial and implementation of a smart AI d
 NeoMedAito leverages the power of:
 
 - 🧠 **Meta LLaMA 3 Vision 90B** — for multimodal reasoning (text + image)
-- 🎤 **Whisper by OpenAI** — for high-accuracy speech-to-text conversion
+- 🎤 **Whisper by Elevenlabs** — for high-accuracy speech-to-text conversion
 
 ---
 
