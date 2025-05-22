@@ -35,9 +35,7 @@ NeoMedAito leverages the power of:
 - **Python 3.11+**
 - **Meta LLaMA3 Vision 90B** (via Hugging Face / local inference)
 - **Whisper (OpenAI)** for Speech Recognition
-- **Gradio** or **Streamlit** for Web Interface
-- **Torch / Transformers** for model serving
-- **NumPy, PIL, etc.** for preprocessing and data handling
+- **Gradio** for Web Interface
 
 
 
